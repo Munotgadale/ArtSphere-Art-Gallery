@@ -1,0 +1,24 @@
+﻿@model Project.Models.Exhb
+
+<h2>Edit Exhibition</h2>
+
+<form method="post" asp-action="Edit">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group">
+        <label asp-for="Title"></label>
+        <input asp-for="Title" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Description"></label>
+        <input asp-for="Description" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Venue"></label>
+        <input asp-for="Venue" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+</form>
